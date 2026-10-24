@@ -10,7 +10,7 @@ https://github.com/murty2/php-8.2.35/releases
 ```
 
 ## If using systemd
-Update your php-fpm.service file to use this php-fpm
+Update your php-fpm.service file to use this php-fpm. Remember to include -c and -y arguments as stated above.
 
 ## How to create the binaries (php, php-fpm, php-cgi) from source
 * First create and login to a docker that works for version 8.2.35
