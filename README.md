@@ -1,5 +1,9 @@
 # Run php version 8.2.35 on any Linux operating system
 
+## Download necessary binaries
+Download php (Command Line Interface), php-cgi (FastCGI testing tool) or php-fpm from the Releases page
+https://github.com/murty2/php-8.2.35/releases
+
 ## Run manually
 ```
 ./php-fpm -c /path/to/php.ini -y /path/to/php-fpm.conf
