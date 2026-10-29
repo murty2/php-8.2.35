@@ -12,7 +12,7 @@ https://github.com/murty2/php-8.2.35/releases
 ## If using systemd
 
 * Update your php-fpm.service file to use this php-fpm. Remember to include -c and -y arguments as stated above.
-* Use Type=exec in your php-fpm.service file. If you really want Type=notify instead, you have to recompile with extra flags:
+* Use Type=simple (For older Linux OS such as RHEL 7, Fedora 19) or Type=exec for newer Linux OS in your php-fpm.service file. If you really want Type=notify instead, you have to recompile with extra flags:
 ```
 export SPC_EXTRA_LIBS="-lsystemd -lcap -llzma -lzstd"
 ./spc build "$EXTENSIONS" --with-libs="$LIBS" --build-fpm --build-cgi --build-cli --extra-ini="--with-fpm-systemd"
